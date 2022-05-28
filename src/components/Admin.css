@@ -1,0 +1,32 @@
+.admin {
+  margin-top: 10rem;
+}
+.adminid {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 44rem;
+  margin-top: 10rem;
+}
+.adminpassword {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 44rem;
+  margin-top: 1rem;
+}
+.adminbutton {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50rem;
+  margin-top: 10px;
+}

@@ -1,0 +1,7 @@
+.table {
+  margin-left: 20rem;
+  height: 500px;
+  width: 1000px;
+  justify-content: center;
+  position: fixed;
+}

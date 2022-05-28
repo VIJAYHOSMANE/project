@@ -1,0 +1,28 @@
+.firstbutton {
+  /* display: flex; */
+  flex-direction: column;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32rem;
+  margin-top: 10rem;
+}
+.customerbutton {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+Link {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+}
+a:hover,
+a:visited {
+  color: hotpink;
+}
