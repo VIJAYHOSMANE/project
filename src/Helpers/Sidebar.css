@@ -3,6 +3,7 @@
   height: 698px;
   width: 200px;
   background-color: #3c6382;
+  position: relative;
 }
 .sidebarlist {
   margin-top: 6.5rem;

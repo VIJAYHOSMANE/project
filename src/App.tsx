@@ -9,6 +9,10 @@ import Adminpage from "./components/Adminpage";
 import CustomerDetails from "./components/CustomerDetails";
 import RoomDetails from "./components/RoomDetails";
 import FoodDetails from "./components/FoodDetails";
+import NotFound from "./Helpers/NotFound";
+import AddUser from "./components/users/AddUser";
+import EditUser from "./components/users/EditUser";
+import DeleteUser from "./components/users/DeleteUser";
 
 function App() {
   const [gameState, setGameState] = useState("frontpage");
@@ -43,6 +47,10 @@ function App() {
           <Route path="/CustomerDetails" element={<CustomerDetails />} />
           <Route path="/RoomDetails" element={<RoomDetails />} />
           <Route path="/FoodDetails" element={<FoodDetails />} />
+          <Route path="/AddUser" element={<AddUser />} />
+          <Route path="/EditUser" element={<EditUser />} />
+          <Route path="/DeleteUser" element={<DeleteUser />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </AppContext.Provider>
     </div>

@@ -1,7 +1,18 @@
 .table {
-  margin-left: 20rem;
+  margin-left: 10rem;
   height: 500px;
   width: 1000px;
   justify-content: center;
   position: fixed;
+}
+.thead-dark {
+  background-color: black;
+  height: 50px;
+}
+.addbutton {
+  margin-left: 73rem;
+  width: 150px;
+  height: 100px;
+  background-color: rgb(15, 215, 255);
+  color: rgb(255, 255, 255);
 }
