@@ -1,7 +1,7 @@
 .table {
   margin-left: 10rem;
-  height: 500px;
-  width: 1000px;
+  height: 70%;
+  width: 67%;
   justify-content: center;
   position: fixed;
 }
@@ -10,7 +10,7 @@
   height: 50px;
 }
 .addbutton {
-  margin-left: 73rem;
+  margin-left: 82rem;
   width: 150px;
   height: 100px;
   background-color: rgb(15, 215, 255);

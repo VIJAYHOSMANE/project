@@ -12,13 +12,7 @@ import EditUser from "../components/users/EditUser";
 const editButton = (e: any) => {
   return <Button variant="contained">Edit</Button>;
 };
-// const coloumns = [
-//   { field: "id", headerName: "ID" },
-//   { field: "name", headerName: "Customer Name", width: 200 },
-//   // {field:'age',headerName:'Age'},
-//   { field: "address", headerName: "Address", width: 300 },
-//   { field: "phone", headerName: "Mobile no.", width: 300 },
-// ];
+
 function CustomerDetails() {
   const [tableData, setTableData] = useState<any[]>([]);
   // useEffect(() => {
@@ -35,6 +29,11 @@ function CustomerDetails() {
     );
     setTableData(result.data);
   };
+  const deleteUser = async (id: any) => {
+    await axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`);
+    loadUsers();
+    console.log(`deleted${id}`);
+  };
   return (
     <div>
       <div className="table">
@@ -49,14 +48,7 @@ function CustomerDetails() {
           Customer Details
         </h2>
 
-        {/* <DataGrid
-          rows={tableData}
-          columns={coloumns}
-          pageSize={10}
-          checkboxSelection
-        /> */}
         <table className="table">
-          {/* <caption>List of users</caption> */}
           <thead className="thead-dark">
             <tr style={{ color: "white" }}>
               <th scope="col">id</th>
@@ -74,20 +66,23 @@ function CustomerDetails() {
               <tr>
                 <th scope="row">{index + 1}</th>
                 <td>{user.name}</td>
-                {/* <td width={300}>{user.address}</td> */}
-                <td>{user.null}</td>
+                <td width={300}>{user.address.city}</td>
+                {/* <td>{user.null}</td> */}
                 <td>{user.null}</td>
                 <td>{user.null}</td>
                 <td>{user.phone}</td>
                 <td>
-                  <Link to="/EditUser">
+                  <Link to={`/EditUser/${user.id}`}>
                     <Button variant="contained" color="primary">
                       Edit
                     </Button>
                   </Link>
                 </td>
                 <td>
-                  <Link to="/DeleteUser">
+                  <Link
+                    to="/CustomerDetails"
+                    onClick={() => deleteUser(user.id)}
+                  >
                     <Button
                       variant="contained"
                       startIcon={<DeleteIcon />}
