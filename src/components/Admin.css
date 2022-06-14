@@ -1,4 +1,8 @@
 .admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 10rem;
 }
 .adminid {
@@ -7,27 +11,21 @@
 
   justify-content: center;
   align-items: center;
-  margin-left: 44rem;
-  margin-top: 10rem;
-  width: 300px;
-  height: 40px;
+
+  width: 100%;
 }
 .adminpassword {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 40px;
+  width: 100%;
+
   justify-content: center;
   align-items: center;
-  margin-left: 44rem;
-  margin-top: 1rem;
 }
 .adminbutton {
   display: flex;
   flex-direction: column;
-  width: 100px;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin-left: 50rem;
-  margin-top: 10px;
 }

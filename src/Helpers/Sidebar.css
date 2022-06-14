@@ -1,13 +1,15 @@
 .sidebar {
   /* margin-top: 0; */
-  height: 698px;
-  width: 14%;
+  max-height: 100%;
+  width: 250px;
+  min-width: 8%;
   background-color: #3c6382;
   position: relative;
+  min-height: 670px;
+  max-width: 14%;
 }
 .sidebarlist {
-  margin-top: 6.5rem;
-  height: auto;
+  height: 100%;
   width: 100%;
   padding: 0;
 }

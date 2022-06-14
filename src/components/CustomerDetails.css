@@ -1,9 +1,12 @@
 .table {
   margin-left: 10rem;
+  justify-content: center;
+  align-items: center;
   height: 70%;
   width: 67%;
   justify-content: center;
   position: fixed;
+  min-width: 50%;
 }
 .thead-dark {
   background-color: black;

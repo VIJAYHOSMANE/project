@@ -13,25 +13,15 @@ import NotFound from "./Helpers/NotFound";
 import AddUser from "./components/users/AddUser";
 import EditUser from "./components/users/EditUser";
 import CustomerLogin from "./components/ClientSide/CustomerLogin";
+import NavBar from "./Helpers/NavBAr";
+import CustomerSignup from "./components/ClientSide/CustomerSignup";
+import CustomerMain from "./components/ClientSide/CustomerMain";
 
 function App() {
   const [gameState, setGameState] = useState("frontpage");
   return (
     <div className="App">
-      <nav className="topbar">
-        <h1
-          className="heading"
-          style={{
-            textAlign: "center",
-            fontSize: "2rem",
-            fontFamily: "Amatic SC",
-            width: "30%",
-            minHeight: "10%",
-          }}
-        >
-          Welcome to Room Services
-        </h1>
-      </nav>
+      <NavBar />
       <nav className="bottombar">
         <p className="copyright">Copyright 2022 iHub | All rights reserved.</p>
       </nav>
@@ -51,6 +41,8 @@ function App() {
           <Route path="/AddUser" element={<AddUser />} />
           <Route path="/EditUser/:id" element={<EditUser />} />
           <Route path="/customerlogin" element={<CustomerLogin />} />
+          <Route path="/customersignup" element={<CustomerSignup />} />
+          <Route path="/customermain" element={<CustomerMain />} />
 
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>

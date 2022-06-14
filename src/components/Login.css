@@ -1,25 +1,23 @@
 .frontpage {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url("../frontimage.jpg.jpg");
-
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.8;
   position: fixed;
-  min-width: 101%;
-  min-height: 100%;
-  margin-top: 6.3rem;
-  margin-left: -17.4rem;
+  width: 100%;
+  height: 100%;
 }
 
 .firstbutton {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
-  width: 100px;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin-left: 49rem;
-  margin-top: 10rem;
 }
 .customerbutton {
   display: flex;

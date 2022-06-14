@@ -11,11 +11,10 @@ import "./Login.css";
 function Login() {
   const { gameState, setGameState } = useContext(AppContext);
   return (
-    <Container>
-      <div className="frontpage">
-        <div className="firstbutton">
-          <Link to="/admin">
-            {/* <Button
+    <div className="frontpage">
+      <div className="firstbutton">
+        <Link to="/admin">
+          {/* <Button
               variant="contained"
               onClick={() => {
                 setGameState("admin");
@@ -23,37 +22,36 @@ function Login() {
             >
               Admin
             </Button> */}
+          <Button
+            radius="lg"
+            size="lg"
+            style={{ width: "150px", backgroundColor: "#2c3e50" }}
+            onClick={() => {
+              setGameState("admin");
+            }}
+          >
+            ADMIN
+          </Button>
+          <br></br>
+          <br></br>
+        </Link>
+        <Link to="/customerlogin">
+          <div className="customerbutton">
+            {/* <Button variant="contained">Customer</Button> */}
             <Button
               radius="lg"
               size="lg"
-              style={{ width: "150px", backgroundColor: "#2c3e50" }}
-              onClick={() => {
-                setGameState("admin");
+              style={{
+                width: "150px",
+                backgroundColor: "#2c3e50",
               }}
             >
-              ADMIN
+              CUSTOMER
             </Button>
-            <br></br>
-            <br></br>
-          </Link>
-          <Link to="/customerlogin">
-            <div className="customerbutton">
-              {/* <Button variant="contained">Customer</Button> */}
-              <Button
-                radius="lg"
-                size="lg"
-                style={{
-                  width: "150px",
-                  backgroundColor: "#2c3e50",
-                }}
-              >
-                CUSTOMER
-              </Button>
-            </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
-    </Container>
+    </div>
   );
 }
 

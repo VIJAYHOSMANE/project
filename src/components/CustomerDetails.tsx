@@ -7,6 +7,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditUser from "../components/users/EditUser";
+import NavBar from "../Helpers/NavBAr";
 // import "../node_modules/bootstrap/scss/bootstrap";
 
 const editButton = (e: any) => {
@@ -102,7 +103,6 @@ function CustomerDetails() {
           </Button>
         </Link>
       </div>
-
       <Sidebar />
     </div>
   );
